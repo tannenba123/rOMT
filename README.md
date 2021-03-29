@@ -1,5 +1,5 @@
 # Regularized Optimal Mass Transport (rOMT) Applied in Glymphatic-Lymphatic fluid flows 
-This project includes code for <br />
+This project includes code for the <br />
 (1) rOMT algorithm <br />
 (2) Lagrangian representation of Glymphatic Dynamics (GLaD) analysis <br />
 (3) Neighborhood-based Cosine Analysis (NCA) <br />
@@ -9,7 +9,7 @@ where (1) runs the main rOMT model on the dataset and (2-3) post-processes the r
 ![pipeline](ppl.png)
 
 ## System Requirements
-The code was mainly written and ran in Matlab (R2018a for rOMT algorithm and R2019b for post-processing), with a small section in GLaD analysis ran with Python 3.7.3. 
+The code was mainly written and run on Matlab (versions R2018a for rOMT algorithm and R2019b for post-processing), with a small section for the GLaD analysis written in Python 3.7.3. 
 
 ### Dependencies
 #### Matlab
@@ -22,7 +22,7 @@ numpy, scipy, dipy
 (b) VisIt 3.0.2 for flux vectors (open source)<br />
 
 ## Demo
-The original 3D MRI dataset (each of size 100x106x100 and in total 11 frames) is too time and memory-consuming to run on a typical desktop computer, so usually we put it on a CPU cluster with 40 cores. Even though it may lose lots of details and information, for the purpose of demonstration, we downsized the original sample data by 0.5 and reduced the data frames to 7. It takes about 70 minutes to run the sample data with default parameters on a computer with 2.6 GHz Intel Core i7 and 16 GB memory. <br />
+The original 3D MRI dataset (each of size 100x106x100 and in total 11 frames) is too time and memory-consuming to run on a typical desktop computer, so usually we put it on a CPU cluster with 40 cores. Even though some details may be lost, for the purpose of demonstration, we downsized the original sample data by 0.5 and reduced the number of data frames to 7. It takes about 70 minutes to run the sample data with default parameters on a computer with 2.6 GHz Intel Core i7 and 16 GB memory. <br />
 
 ### Instructions
 
@@ -30,7 +30,7 @@ To run the rOMT algorithm:<br />
 (1) Set data directory, model parameters etc. in ```getParams.m``` and set the same tag name in line 6 of ```driver.m```. You can skip this step by using the default parameters and tag name within.<br />
 (2) Run ```driver.m```.<br />
 
-You are expected to see output like the following (subject to changes dependent on the paramters in ```getParams.m```):<br />
+You are expected to see output like the following (subject to changes dependent on the parameters in ```getParams.m```):<br />
 ```
 =============== rOMT Starts ===============
 ______________________________________________
